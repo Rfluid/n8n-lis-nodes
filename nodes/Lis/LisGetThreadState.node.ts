@@ -5,7 +5,7 @@ export class LisGetThreadState implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Lis - Get Thread State',
 		name: 'lisGetThreadState',
-		icon: 'file:assets/icons/lis.png',
+		icon: 'file:assets/icons/lis.svg',
 		group: ['transform'],
 		version: 1,
 		description: 'Get the current state of a thread',

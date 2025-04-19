@@ -5,7 +5,7 @@ export class LisSendChatMessage implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Lis - Send Chat Message',
 		name: 'lisSendChatMessage',
-		icon: 'file:assets/icons/lis.png',
+		icon: 'file:assets/icons/lis.svg',
 		group: ['transform'],
 		version: 1,
 		description: 'Send chat message to Lis',

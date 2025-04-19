@@ -5,7 +5,7 @@ export class LisGetThreadHistory implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Lis - Get Thread History',
 		name: 'lisGetThreadHistory',
-		icon: 'file:assets/icons/lis.png',
+		icon: 'file:assets/icons/lis.svg',
 		group: ['transform'],
 		version: 1,
 		description: 'Get the execution history of a thread',

@@ -5,7 +5,7 @@ export class LisSendSystemInstructions implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Lis - Send System Instructions',
 		name: 'lisSendSystemInstructions',
-		icon: 'file:assets/icons/lis.png',
+		icon: 'file:assets/icons/lis.svg',
 		group: ['transform'],
 		version: 1,
 		description: 'Send system instructions to Lis',

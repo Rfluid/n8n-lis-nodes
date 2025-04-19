@@ -5,7 +5,7 @@ export class LisDeleteThread implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Lis - Delete Thread',
 		name: 'lisDeleteThread',
-		icon: 'file:assets/icons/lis.png',
+		icon: 'file:assets/icons/lis.svg',
 		group: ['transform'],
 		version: 1,
 		description: 'Delete a specific thread',
