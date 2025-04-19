@@ -15,7 +15,8 @@ function copyCredentialIcons() {
 
 function copyAssetIcons() {
 	const assetSource = path.resolve('assets', 'icons', '**', '*.{png,svg}');
-	const assetDestination = path.resolve('dist', 'assets', 'icons');
+	// const assetDestination = path.resolve('dist', 'assets', 'icons');
+	const assetDestination = path.resolve('dist', 'nodes', 'Lis', 'assets', 'icons');
 	return src(assetSource).pipe(dest(assetDestination));
 }
 
