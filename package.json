@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-lis",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "n8n custom nodes for Lis AI integration",
 	"keywords": [
 		"n8n-community-node-package",
