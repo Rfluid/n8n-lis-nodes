@@ -36,6 +36,15 @@ export class LisSendChatMessage implements INodeType {
 				required: true,
 			},
 			{
+				displayName: 'Maximum Retries',
+				name: 'maxRetries',
+				type: 'number',
+				default: 1,
+				description:
+					'Maximum number of retries for handling the message. AI will try to solve issues this many times.',
+				required: true,
+			},
+			{
 				displayName: 'Chatinterface',
 				name: 'chatInterface',
 				type: 'options',
@@ -58,8 +67,14 @@ export class LisSendChatMessage implements INodeType {
 			const threadId = this.getNodeParameter('threadId', i) as string;
 			const data = this.getNodeParameter('data', i) as string;
 			const chatInterface = this.getNodeParameter('chatInterface', i) as string;
+			const maxRetries = this.getNodeParameter('maxRetries', i) as number;
 
-			const body = { thread_id: threadId, data, chat_interface: chatInterface };
+			const body = {
+				thread_id: threadId,
+				data,
+				max_retries: maxRetries,
+				chat_interface: chatInterface,
+			};
 			const response = await this.helpers.httpRequest({
 				method: 'POST',
 				url: `${credentials.url}/agent/messages/user`,
